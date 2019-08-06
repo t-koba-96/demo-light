@@ -108,7 +108,8 @@ venv.bak/
 .DS_Store
 
 # data
-datas/
+datas/*
+!datas/mapping/
 
 # swp
 *.swp
