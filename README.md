@@ -6,6 +6,9 @@
 
 Check out [information page](https://t-koba-96.github.io/blog/demo/) for running on your own environment(Only Japanese).
 
+# Check Demo  
+
+Demo app running on [App Page](https://classification-tkoba.appspot.com/)(Unfortunately, the demo is running in very low frame rate due to the virtual machine environment.)
 
 # Usage for evaluating open datasets 
 
