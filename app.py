@@ -9,7 +9,7 @@ import flask
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
-from dash.dependencies import Input, Output, State,Event
+from dash.dependencies import Input, Output, State
 import plotly.graph_objs as go
 import plotly.figure_factory as ff
 
@@ -443,6 +443,9 @@ def update_frame_select(dataset,video):
              )
 def update_frame_auto_select(dataset,video,start,inter):
       video_length = get_length_of_video(data_dict[dataset][video])
+      if start == None:
+          start = 0
+      print("frame {}".format(start+inter))
       return   [
                 "(Auto Play)",
                     dcc.RangeSlider(
